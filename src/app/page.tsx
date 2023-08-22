@@ -1,6 +1,6 @@
 import { getTodos } from "../../pages/api/todo";
-import AddTodo from "./containers/Home/AddTodo"
-import TodoList from "./containers/Home/ToDoList"
+import { AddTodo } from "./components/Todo";
+import { TodoList } from "./components/Todo";
 
 export default async function Home() {
 
