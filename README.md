@@ -18,24 +18,35 @@
 
 ```
 pages/
-|-- api/               # api
-|    |-- todo.ts
+│
+├── api/               # API routes
+│   └── todo.ts
+│
 public/                # Static files (images, fonts, etc...)
+│
 src/
-|  app/-- components/ # Reusable UI components
-|  |   |     |-- Todo/
-|  |   |          |-- index.tsx
-|  |   |          |-- Todo.module.css (or Button.styles.ts)
-|  |   |          |-- Todo.test.tsx
-|  |   |      |-- Button/
-|  |   |
-|  |   / -- types/      # TypeScript type definitions
-|  |   |     |-- todo.ts
-|  |   |-- layout.tsx
-|  |   |-- page.tsx
-|  data/
-|     |-- todos.json   # Json data
-|  |-- .eslintrc.json   
+│
+├── app/
+│   │
+│   ├── components/   # Reusable UI components
+│   │   │
+│   │   ├── Todo/
+│   │   │   ├── index.tsx
+│   │   │   ├── Todo.module.css (or Todo.styles.ts)
+│   │   │   └── Todo.test.tsx
+│   │   │
+│   │   └── Button/
+│   │
+│   ├── types/        # TypeScript type definitions
+│   │   └── todo.ts
+│   │
+│   ├── layout.tsx
+│   └── page.tsx
+│
+├── data/
+│   └── todos.json    # JSON data
+│
+└── .eslintrc.json
 ```
 
 ## Getting Started
