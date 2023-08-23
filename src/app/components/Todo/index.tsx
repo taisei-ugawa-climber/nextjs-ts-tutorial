@@ -5,7 +5,7 @@ import { v4 as uuidv4 } from "uuid";
 import { PencilAltIcon, SaveIcon, TrashIcon } from "@heroicons/react/solid";
 
 import { TodoType } from "@/app/types/todo";
-import { addTodo, updateTodo } from "../../../../pages/api/todo";
+import { addTodo, deleteTodo, updateTodo } from "../../../../pages/api/todo";
 
 interface TodoListProps {
     todos: TodoType[];
@@ -42,6 +42,11 @@ export const TodoItem = ({ todo }: TodoItemProps): JSX.Element => {
         router.refresh();
     };
 
+    const handleDelete = async () => {
+        await deleteTodo(todo.id);
+        router.refresh();
+    }
+
     return (
         <li key={todo.id} className="flex justify-between p-4 bg-white border-l-4 border-blue-500 rounded shadow">
             {
@@ -73,7 +78,7 @@ export const TodoItem = ({ todo }: TodoItemProps): JSX.Element => {
                     )
                 }
                 <TrashIcon
-                    onClick={() => { }}
+                    onClick={handleDelete}
                     className="h-5 w-5 text-red-500 hover:text-red-700 cursor-pointer"
                 />
             </div>
