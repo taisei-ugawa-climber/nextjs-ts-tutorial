@@ -1,7 +1,7 @@
 import { TodoType } from "@/app/types/todo"
 
 // TODO: FireBase or DynamoDB運用に変更してみる。現在はjsonサーバーなので下記を定義
-const baseUrl = "http://localhost:4000/"
+const baseUrl = "http://localhost:4000"
 
 export const getTodos = async (): Promise<TodoType[]> => {
     const res = await fetch(`${baseUrl}/todos`, { cache: "no-store" })
