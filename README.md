@@ -13,6 +13,7 @@
 * [json-server](https://www.npmjs.com/package/json-server)
 * [uuid](https://www.npmjs.com/package/uuid)
 * [@types/uuid](https://www.npmjs.com/package/@types/uuid)
+* [@heroicons/react](https://www.npmjs.com/package/@heroicons/react)
 
 ## Directory Structure
 
