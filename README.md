@@ -1,3 +1,8 @@
+<p align="center">
+  <img width="110" height="110" src="https://img.icons8.com/fluency/128/nextjs.png" alt="nextjs"/>
+  <img width="110" height="110" src="https://img.icons8.com/color/128/typescript.png" alt="typescript"/>
+</p>
+
 # NextJs13 Tutorial App with TypeScript
 
 * [NextJs Document](https://nextjs.org/docs)
@@ -18,36 +23,24 @@
 ## Directory Structure
 
 ```
-pages/
-│
-├── api/               # API routes
-│   └── todo.ts
-│
-public/                # Static files (images, fonts, etc...)
-│
 src/
-│
-├── app/
-│   │
-│   ├── components/   # Reusable UI components
-│   │   │
-│   │   ├── Todo/
-│   │   │   ├── index.tsx
-│   │   │   ├── Todo.module.css (or Todo.styles.ts)
-│   │   │   └── Todo.test.tsx
-│   │   │
-│   │   └── Button/
-│   │
-│   ├── types/        # TypeScript type definitions
-│   │   └── todo.ts
-│   │
-│   ├── layout.tsx
-│   └── page.tsx
-│
-├── data/
-│   └── todos.json    # JSON data
-│
-└── .eslintrc.json
+|-- pages/
+|   |-- api/             # Page api aysc function files
+|   |   |-- todo.ts
+|-- pubclic/             # Static file installation
+|-- src/        
+|   |-- app/
+|   |   |-- components/  # Installation of component files
+|   |   |　　|-- Todo/   
+|   |   |   |   |-- index.tsx
+|   |   |   |   |-- Todo.module.css (or Button.styles.ts)
+|   |   |   |   |-- Todo.test.tsx
+|   |   |-- types/       # Installation of type definition files
+|   |   |-- layout.tsx   # Layout files common to all pages
+|   |   |-- page.tsx     # Application entry point
+|   |-- data/
+|   |   |-- todos.json
+|-- .eslintrc.json       
 ```
 
 ## Getting Started
